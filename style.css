@@ -1,0 +1,187 @@
+body {
+    background-color: black;
+    color: white;
+    margin: 10px 10px 10px 10px;
+}
+
+  .italic {
+    font-style: italic;
+  }
+  
+  .underline {
+      text-decoration: underline;
+  }
+
+
+.parent-section h2 {
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.display-none {
+    display: none;
+}
+
+.intro {
+    font-family: 'Poppins', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    text-align: center;
+}
+
+.intro-text {
+    display: block;
+}
+
+.site-description {
+    margin-top: 20px;
+    line-height: 1.5rem;
+    font-style: italic;
+    font-weight: 200;
+}
+
+.main-title {
+    font-size: 50px;
+    padding-top: 100px;
+    font-weight: 600;
+}
+
+
+.parent-section  {
+    padding-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.info-card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    padding: 20px 20px 20px 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    height: fit-content;
+    min-height: 100px;
+}
+
+.info-card:hover {
+    background-color: white;
+    color: black;
+}
+
+.card-title {
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.card-description {
+    font-style: italic;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+ 
+.card-description p {
+    line-height: 1.5rem;
+  }
+
+
+
+.card-description li {
+    list-style: disc;
+}
+
+
+@media only screen and (max-width:472px) { 
+	.card-description {
+        margin-left: 0px;
+    }
+
+    .card-description audio {
+        max-width: 100%;
+    }
+
+    audio::-webkit-media-controls-timeline-container, audio::-webkit-media-controls-current-time-display, audio::-webkit-media-controls-time-remaining-display, audio::-webkit-media-controls-mute-button, audio::-webkit-media-controls-volume-slider-container, audio::-webkit-media-controls-volume-slider, audio::-webkit-media-controls-seek-back-button, audio::-webkit-media-controls-seek-forward-button
+, audio::-webkit-media-controls-fullscreen-button, audio::-webkit-media-controls-rewind-button, audio::-webkit-media-controls-return-to-realtime-button, audio::-webkit-media-controls-toggle-closed-captions-button
+{
+        display: none;
+    }
+
+    audio::-webkit-media-controls-timeline {
+        width: 500px;
+    }
+
+    .parent-section {
+        margin-left: 15px;
+        margin-right: 30px;
+    }
+
+    .card-description li {
+        list-style: none;
+    }
+}
+
+/* Animated background idea */
+
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
+/* NavBar Styling */
+/* Style the navbar */
+#navbar {
+    overflow: hidden;
+    background-color: #333;
+    z-index: 10000;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Navbar links */
+  #navbar a {
+    display: inline-flex;
+    color: #f2f2f2;
+    padding: 14px;
+    text-decoration: none;
+  }
+  
+  /* Page content */
+  .content {
+    padding: 16px;
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
+  
+  .parent-section {
+      padding-top: 60px;
+  }
