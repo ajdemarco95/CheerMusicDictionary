@@ -182,3 +182,8 @@ body {
   .parent-section {
       padding-top: 60px;
   }
+
+  .info-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  }
