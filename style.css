@@ -65,9 +65,6 @@ body {
     border-radius: 10px;
     height: fit-content;
     min-height: 100px;
-}
-
-.info-card:hover {
     background-color: white;
     color: black;
 }
